@@ -9,11 +9,13 @@ const todolist = [
 const completedTodos = []
 
 for (task of todolist) {
-    if (task['status'] === "complete"){
+    if (task.status === "complete"){
         completedTodos.push(task)
     }
 }
 
+
 for (value of completedTodos) {
-    console.log(value['todo'])
+    complete_task = value.todo
+    console.log(complete_task)
 }
